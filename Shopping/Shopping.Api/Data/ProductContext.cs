@@ -1,10 +1,31 @@
-﻿using Shopping.Client.Models;
+﻿using MongoDB.Driver;
+using Shopping.Api.Models;
 
-namespace Shopping.Client.Data
+namespace Shopping.Api.Data
 {
-    public static class ProductContext
+    public class ProductContext
     {
-        public static readonly List<Product> Products = new()
+        public IMongoCollection<Product> Products { get; }
+
+        public ProductContext(IConfiguration configuration)
+        {
+            var client = new MongoClient(configuration["DatabaseSettings:ConnectionString"]);
+            var database = client.GetDatabase(configuration["DatabaseSettings:DatabaseName"]);
+
+            Products = database.GetCollection<Product>(configuration["DatabaseSettings:CollectionName"]);
+            SeedData(Products);
+        }
+
+        private void SeedData(IMongoCollection<Product> productCollection)
+        {
+            var productsDatabase = productCollection.Find(x => true).Any();
+            if (productsDatabase)
+                return;
+
+            productCollection.InsertMany(InitialProducts);
+        }
+
+        public static readonly List<Product> InitialProducts = new()
         {
             new Product
             {
