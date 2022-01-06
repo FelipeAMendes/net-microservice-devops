@@ -5,7 +5,7 @@ trigger:
   paths:
     include:
     - felipeamendes/shopping.Api/*
-    - aks/shoppingapi.yml
+    - aks/shoppingapi.yaml
 
 resources:
 - repo: self
