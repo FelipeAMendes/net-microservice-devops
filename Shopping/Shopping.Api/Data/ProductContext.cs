@@ -33,7 +33,7 @@ namespace Shopping.Api.Data
                 Description =
                     "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                 ImageFile = "product-1.png",
-                Price = 959.00M,
+                Price = 999.00M,
                 Category = "Smart Phone"
             },
             new Product
@@ -42,7 +42,7 @@ namespace Shopping.Api.Data
                 Description =
                     "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                 ImageFile = "product-2.png",
-                Price = 849.00M,
+                Price = 899.00M,
                 Category = "Smart Phone"
             },
             new Product
@@ -51,7 +51,7 @@ namespace Shopping.Api.Data
                 Description =
                     "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                 ImageFile = "product-3.png",
-                Price = 659.00M,
+                Price = 699.00M,
                 Category = "White Appliances"
             },
             new Product
@@ -60,7 +60,7 @@ namespace Shopping.Api.Data
                 Description =
                     "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                 ImageFile = "product-4.png",
-                Price = 479.00M,
+                Price = 499.00M,
                 Category = "White Appliances"
             },
             new Product
@@ -69,7 +69,7 @@ namespace Shopping.Api.Data
                 Description =
                     "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                 ImageFile = "product-5.png",
-                Price = 389.00M,
+                Price = 399.00M,
                 Category = "Smart Phone"
             },
             new Product
@@ -78,7 +78,7 @@ namespace Shopping.Api.Data
                 Description =
                     "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                 ImageFile = "product-6.png",
-                Price = 249.00M,
+                Price = 299.00M,
                 Category = "Home Kitchen"
             }
         };
